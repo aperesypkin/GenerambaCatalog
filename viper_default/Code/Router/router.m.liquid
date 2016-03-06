@@ -1,0 +1,28 @@
+{% include 'header' %}
+
+#import "{{ prefix }}{{ module_info.name }}Router.h"
+#import "{{ prefix }}{{ module_info.name }}Presenter.h»
+
+@interface {{ prefix }}{{ module_info.name }}Router ()
+
+@end
+
+@implementation {{ prefix }}{{ module_info.name }}Router
+
+//- (void)present{{ prefix }}{{ module_info.name }}ModuleFromNavigationController:(UINavigationController *)nc
+//{
+//    self.presentedController = nc;
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        nc.viewControllers = @[self.view];
+//    });
+//}
+//
+//- (void)present{{ prefix }}{{ module_info.name }}ModuleFromWindow:(UIWindow *)window
+//{
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [window setRootViewController:self.view];
+//        [window makeKeyAndVisible];
+//    });
+//}
+
+@end

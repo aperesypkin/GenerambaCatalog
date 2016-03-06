@@ -1,0 +1,12 @@
+{% include 'header' %}
+
+#import "{{ prefix }}{{ module_info.name }}RouterInput.h"
+
+@class {{ prefix }}{{ module_info.name }}Presenter;
+
+@interface {{ prefix }}{{ module_info.name }}Router : NSObject <{{ prefix }}{{ module_info.name }}RouterInput>
+
+@property (nonatomic, strong) {{ prefix }}{{ module_info.name }}Presenter *presenter;
+@property (nonatomic, strong) UIViewController *view;
+
+@end

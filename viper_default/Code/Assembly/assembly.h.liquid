@@ -1,0 +1,9 @@
+{% include 'header' %}
+
+@protocol {{ prefix }}{{ module_info.name }}ModuleInput;
+
+@interface {{ prefix }}{{ module_info.name }}Assembly : NSObject
+
++ (id <{{ prefix }}{{ module_info.name }}ModuleInput>)create{{ prefix }}{{ module_info.name }}Module;
+
+@end
