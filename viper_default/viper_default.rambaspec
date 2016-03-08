@@ -1,5 +1,8 @@
 # Template information section
 name: "viper_default"
+summary: «Test module«
+author: «Alexander Peresypkin»
+version: «1.0»
 license: "MIT"
 
 # The declarations for code files
