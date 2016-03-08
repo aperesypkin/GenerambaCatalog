@@ -10,7 +10,7 @@
 
 + (id <{{ prefix }}{{ module_info.name }}ModuleInput>)create{{ prefix }}{{ module_info.name }}Module
 {
-	{{ prefix }}{{ module_info.name }}ViewController *view = [{{ prefix }}{{ module_info.name }} ViewController new];
+	{{ prefix }}{{ module_info.name }}ViewController *view = [{{ prefix }}{{ module_info.name }}ViewController new];
 	{{ prefix }}{{ module_info.name }}Interactor *interactor = [{{ prefix }}{{ module_info.name }}Interactor new];
 	{{ prefix }}{{ module_info.name }}Presenter *presenter = [{{ prefix }}{{ module_info.name }}Presenter new];
 	{{ prefix }}{{ module_info.name }}Router *router = [{{ prefix }}{{ module_info.name }}Router new];
@@ -18,15 +18,15 @@
 	router.view = view;
   	router.presenter = presenter;
     
-    	view.output = presenter;
-    	interactor.output = presenter;
+	view.output = presenter;
+	interactor.output = presenter;
     
-    	presenter.view = view;
-    	presenter.interactor = interactor;
-    	presenter.router = router;
-    	[presenter configureModule];
+	presenter.view = view;
+	presenter.interactor = interactor;
+	presenter.router = router;
+	[presenter configureModule];
     
-    	return presenter;
+	return presenter;
 }
 
 @end
