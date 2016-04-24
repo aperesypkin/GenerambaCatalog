@@ -1,6 +1,6 @@
 {% include 'header' %}
 
-@protocol {{ prefix }}{{ module_info.name }}ModuleInput <RamblerViperModuleInput>
+@protocol {{ prefix }}{{ module_info.name }}ModuleInput <NSObject>
 
 - (void)configureModule;
 
