@@ -16,8 +16,6 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenter{{ module_info.name }}]];
-                              [definition injectProperty:@selector(moduleInput)
-                                                    with:[self presenter{{ module_info.name }}]];
                           }];
 }
 
